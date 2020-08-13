@@ -4,12 +4,18 @@ require_once("config.php");
 
 $usuario = new Usuario();
 $usuario->loadById(7);
-
-$usuario->update("professor", "!@#$%");
-
+$usuario->delete();
 echo $usuario;
 
-//-----------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------
+// ATUALIZA PELO ID USUARIO alterar.
+//$usuario = new Usuario();
+//$usuario->loadById(7);
+//$usuario->update("professor", "!@#$%");
+//echo $usuario;
+
+//----------------------------------------------------------------------------------
 //CRIANDO UM NOVO USUARIO INSERT
 //$aluno = new Usuario("joao", "maria123");
 //$aluno->insert();
