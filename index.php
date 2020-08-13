@@ -1,23 +1,51 @@
 <?php  
 
+require_once("config.php");
 
+$usuario = new Usuario();
+$usuario->loadById(7);
 
+$usuario->update("professor", "!@#$%");
 
+echo $usuario;
 
+//-----------------------------------------------------------------------------------
+//CRIANDO UM NOVO USUARIO INSERT
+//$aluno = new Usuario("joao", "maria123");
+//$aluno->insert();
+//echo $aluno;
+//-----------------------------------------------------------------------------------
 
+//CARREGA UM USUARIO USANDO LOGIN E SENHA
+//$usuario = new Usuario();
+//$usuario->login("professor", "!@#$%¨&");
+//echo $usuario;
 
+//-----------------------------------------------------------------------------------
+//BUSCA UMA LISTA DE USUARIOS BUSCANDO PELO LOGIN
 
+//$search = Usuario::search("alu");
 
+//echo json_encode($search);
 
+//-----------------------------------------------------------------------------------
+
+// CARREGA UMA LISTA DE USUARIOS.
+//require_once("config.php");
+
+//$lista = Usuario::getList();
+
+//echo json_encode($lista);
+//-----------------------------------------------------------------------------------
 /*
 require_once("config.php");
 
-$root = new Usuario(); // SELECT DE UM ID ESPECIFICO.
+$root = new Usuario(); // SELECT DE UM ID ESPECIFICO do Usuario.
 
 $root->loadById(8);
 
 echo $root;
-
+//---------------------------------------------------------------------------------------
 */
 /*require_once("config.php");
 

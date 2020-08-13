@@ -4,7 +4,6 @@ class Sql extends PDO {
 
 	private $conn;
 
-
 	public function __construct(){ // FUNCAO QUE CONECTA NO BANCO.
 
 		$this->conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root", "");
